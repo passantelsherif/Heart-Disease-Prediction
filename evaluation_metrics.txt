@@ -1,0 +1,63 @@
+# Model Evaluation Metrics
+
+## Logistic Regression
+Accuracy:  0.87
+Precision: 0.81
+Recall:    0.93
+F1 Score:  0.87
+AUC Score: 0.95
+
+## Random Forest
+Accuracy:  0.92
+Precision: 0.87
+Recall:    0.96
+F1 Score:  0.92
+AUC Score: 0.95
+
+## K-Nearest Neighbors (KNN)
+Accuracy:  0.70
+Precision: 0.73
+Recall:    0.57
+F1 Score:  0.64
+AUC Score: 0.78
+
+## Support Vector Machine (Linear)
+Accuracy:  0.85
+Precision: 0.81
+Recall:    0.89
+F1 Score:  0.85
+AUC Score: 0.94
+
+## Support Vector Machine (RBF)
+Accuracy:  0.69
+Precision: 0.71
+Recall:    0.54
+F1 Score:  0.61
+AUC Score: 0.79
+
+## Naive Bayes
+Accuracy:  0.87
+Precision: 0.79
+Recall:    0.96
+F1 Score:  0.87
+AUC Score: 0.95
+
+---
+
+### Final Model Performance (Logistic Regression)
+Accuracy: 0.8688524590163934
+
+Classification Report:
+               precision    recall  f1-score   support
+           0       0.93      0.82      0.87        33
+           1       0.81      0.93      0.87        28
+
+    accuracy                           0.87        61
+   macro avg       0.87      0.87      0.87        61
+weighted avg       0.88      0.87      0.87        61
+
+Confusion Matrix:
+ [[27  6]
+ [ 2 26]]
+
+AUC Score: 0.955
