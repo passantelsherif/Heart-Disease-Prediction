@@ -1,0 +1,26 @@
+# Ngrok Setup for Streamlit Deployment
+
+Follow these steps to deploy your Streamlit app with Ngrok:
+
+1. Install pyngrok:
+   pip install pyngrok
+
+2. Create an account at https://ngrok.com/ and get your AuthToken.
+
+3. Set your AuthToken in your Python script:
+   from pyngrok import ngrok
+   ngrok.set_auth_token("YOUR_AUTHTOKEN")
+
+4. Run your Streamlit app locally:
+   streamlit run app.py
+
+5. Create a tunnel to your app:
+   from pyngrok import ngrok
+   public_url = ngrok.connect(8501)
+   print("Public URL:", public_url)
+
+6. Open the public URL in your browser to access the app.
+
+Note:
+- Your local app must remain running for Ngrok to work.
+- For permanent hosting, use services like Streamlit Cloud or Heroku.
